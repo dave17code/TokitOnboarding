@@ -82,7 +82,15 @@
     "prettier": "^3.3.2",
     "typescript": "^5.4.5"
   },
-  "engines": { "node": ">= 18.0.0", "npm": ">= 7.10.0", "yarn": ">= 1.22.17" },
-  "os": ["darwin", "win64", "linux"],
+  "engines": {
+    "node": ">= 18.0.0",
+    "npm": ">= 7.10.0",
+    "yarn": ">= 1.22.17"
+  },
+  "os": [
+    "darwin",
+    "win64",
+    "linux"
+  ],
   "engineStrict": true
 }

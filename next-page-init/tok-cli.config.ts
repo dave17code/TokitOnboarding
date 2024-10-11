@@ -9,7 +9,7 @@ import { genTheme } from '@toktokhan-dev/cli-plugin-gen-theme-chakra'
 // 새로 만든 플러그인 import
 import { printText } from './src/scripts/plugin-text'
 
-// scripts 폴더 경로 유지
+// 정확한 경로 유지
 
 const config: RootConfig<{
   plugins: [
@@ -50,10 +50,10 @@ const config: RootConfig<{
   'gen:icon': {
     input: 'public/icons',
   },
-  // printText 플러그인의 설정 추가
   'print:text': {
     output: 'generated/print-text.txt', // 기본 출력 경로
-    input: 'Hello World!', // input 설정 추가
+    input: 'Hello World!', // 기본 입력 값
   },
 }
+
 export default config

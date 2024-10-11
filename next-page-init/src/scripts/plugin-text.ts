@@ -1,4 +1,3 @@
-// next-page-init/scripts/plugin-text.ts
 import { writeFileSync } from 'fs'
 
 import { defineCommand } from '@toktokhan-dev/cli'
@@ -8,7 +7,7 @@ import { defineCommand } from '@toktokhan-dev/cli'
  *
  * - tok-cli.config.ts 에서 해당 플러그인의 option 을 정의할 때 사용됩니다.
  * - config 파일은 js, ts 이기 때문에, 옵션 객체의 각 property 는 함수, 배열 등 어떤 타입이든 정의 가능합니다.
- * - run 함수의 인자 type 으로 사용됩니다.
+ * - run 함수의 인자 타입으로 사용됩니다.
  */
 export type GenTxtConfig = {
   input: string
@@ -20,28 +19,31 @@ export const printText = defineCommand<'print:text', GenTxtConfig>({
    * 플러그인의 이름을 정의합니다.
    *
    * - tokript {command} 로 실행됩니다.
-   * - tok-cli.config 에서 옵션 정의시 해당 옵션의 key 값으로 사용됩니다.
+   * - tok-cli.config 에서 옵션 정의 시 해당 옵션의 key 값으로 사용됩니다.
    */
   name: 'print:text',
+
   /**
    * 플러그인의 설명을 정의합니다.
    *
-   * - tokript help 실행시 표기됩니다.
+   * - tokript help 실행 시 표기됩니다.
    */
   description: '텍스트 파일을 생성합니다.',
+
   /**
-   * 플러그인 실행시 사용할 config 의 기본값을 정의합니다.
+   * 플러그인 실행 시 사용할 config의 기본값을 정의합니다.
    *
-   * - 특정 옵션이 `--output` 과 같은 `cli option` 이나 `tok-cli.config.ts` 에 정의 되지 않았을 때 사용됩니다.
+   * - 특정 옵션이 `--output` 같은 `cli option`이나 `tok-cli.config.ts`에 정의되지 않았을 때 사용됩니다.
    */
   default: {
     output: './src/generated/print-text.txt',
   },
+
   /**
    * --output, -o 와 같은 cli option 을 정의합니다.
    *
-   * - cli option 에 정의되지 않은 옵션은 오직 config 파일에서만 정의 가능합니다.
-   * - cli option 은 원시값, 원시값 배열과 같은 간단한 값만 사용 가능합니다. ex) string, string[]
+   * - cli option에 정의되지 않은 옵션은 오직 config 파일에서만 정의 가능합니다.
+   * - cli option은 원시값, 원시값 배열과 같은 간단한 값만 사용 가능합니다. ex) string, string[]
    * - tokript help {command} 시 정의한 alias, 설명, 기본값을 확인할 수 있습니다.
    */
   cliOptions: [
@@ -58,6 +60,7 @@ export const printText = defineCommand<'print:text', GenTxtConfig>({
       type: 'string',
     },
   ],
+
   /**
    * 플러그인 실행 함수를 정의합니다.
    *
