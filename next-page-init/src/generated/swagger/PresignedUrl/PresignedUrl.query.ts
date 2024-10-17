@@ -2,7 +2,7 @@ import { useMutation } from '@tanstack/react-query'
 
 import { AxiosError } from 'axios'
 
-import instance from '@/cofigs/axios/instance'
+import instance from '@/configs/axios/instance'
 
 import { MutationHookParams } from '../@types/react-query-type'
 import { PresignedUrlApi } from './PresignedUrl.api'

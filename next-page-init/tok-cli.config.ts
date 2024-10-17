@@ -28,7 +28,7 @@ const config: RootConfig<{
   'gen:api': {
     swaggerSchemaUrl: 'http://localhost:5001/api-json',
     output: 'src/generated/swagger',
-    instancePath: '@/cofigs/axios/instance',
+    instancePath: '@/configs/axios/instance',
     includeReactQuery: true,
     includeReactInfiniteQuery: true,
     paginationSets: [
