@@ -12,6 +12,7 @@ module.exports = withBundleAnalyzer({
   eslint: {
     ignoreDuringBuilds: true,
   },
+  transpilePackages: ['@chakra-ui/next-js'],
   reactStrictMode: true,
   compiler: {
     removeConsole:
