@@ -15,6 +15,7 @@
     "test:watch": "jest --watch",
     "tokript": "tokript2",
     "gen:theme": "tokript2 gen:theme",
+    "gen:api": "tokript2 gen:api",
     "commit": "tokript2 commit",
     "theme": "chakra-cli tokens src/configs/theme/index.ts",
     "theme:open": "code -r node_modules/@chakra-ui/styled-system/dist/theming.types.d.ts",
@@ -82,7 +83,15 @@
     "prettier": "^3.3.2",
     "typescript": "^5.4.5"
   },
-  "engines": { "node": ">= 18.0.0", "npm": ">= 7.10.0", "yarn": ">= 1.22.17" },
-  "os": ["darwin", "win64", "linux"],
+  "engines": {
+    "node": ">= 18.0.0",
+    "npm": ">= 7.10.0",
+    "yarn": ">= 1.22.17"
+  },
+  "os": [
+    "darwin",
+    "win64",
+    "linux"
+  ],
   "engineStrict": true
 }
