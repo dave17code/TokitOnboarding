@@ -1,0 +1,6 @@
+{
+	"devDependencies": {
+		"@toktokhan-dev/cli": "^0.0.11",
+		"@toktokhan-dev/cli-plugin-commit": "^0.0.10"
+	}
+}
