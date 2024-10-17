@@ -1,12 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 
-import {
-  ContainerProps,
-  Grid,
-  GridItem,
-  GridItemProps,
-  keyframes,
-} from '@chakra-ui/react'
+import { ContainerProps, Grid, GridItem, GridItemProps } from '@chakra-ui/react'
+import { keyframes } from '@emotion/react'
 
 import { LAYOUT } from '@/constants/layout'
 

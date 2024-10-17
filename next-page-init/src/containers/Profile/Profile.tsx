@@ -2,9 +2,9 @@ import { Center, Text } from '@chakra-ui/react'
 
 import TemplateLayout from '@/components/@Templates/TemplateLayout'
 
-function Home() {
+function Profile() {
   return (
-    <TemplateLayout title="Home">
+    <TemplateLayout title="Profile">
       <Center h={'100%'} borderRadius={'8px'} flexDir={'column'} gap={'20px'}>
         <Text
           color={'primary.3'}
@@ -20,4 +20,4 @@ function Home() {
     </TemplateLayout>
   )
 }
-export default Home
+export default Profile
